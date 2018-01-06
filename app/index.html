@@ -16,7 +16,7 @@
   <!-- endbuild -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
   <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <!-- endbuild -->
 
   <!-- build:js scripts/vendor/modernizr.js -->
@@ -86,9 +86,9 @@
         </div>
         <div class="col-lg-6 col-offset-1">
           <ul class="list-inline">
-            <li>new listings</li>
-            <li>open houses</li>
-            <li>map search</li>
+            <li><a href="#">new listings</a></li>
+            <li><a href="#">open houses</a></li>
+            <li><a href="#">map search</a></li>
           </ul>
         </div>
       </div>
@@ -97,7 +97,7 @@
 
   <div class="container-fullwidth" id="realtor">
     <div class="container">
-      <div class="row">
+      <div class="row vertical-align">
         <div class="col-lg-3">
           <img src="./Assets/Realtor Image/saramortensun.jpg" height="300px" />
         </div>
@@ -105,28 +105,30 @@
           <h2 class="name">Jane Smith</h2>
           <p class=" sans-font">Realtor&reg;</p>
           <button id="contact-button">Contact Me</button>
-          <ul class="list-inline">
-            <li>
-              <img src='./Assets/SVGs/facebook.svg' />
-            </li>
-            <li>
-              <img src='./Assets/SVGs/linkedin.svg' />
-            </li>
-            <li>
-              <img src='./Assets/SVGs/twitter.svg' />
-            </li>
-            <li>
-              <img src='./Assets/SVGs/youtube.svg' />
-            </li>
-            <li>
-              <img src='./Assets/SVGs/instagram.svg' />
-            </li>
-          </ul>
+          <div class="social-container">
+            <ul class="list-inline items">
+              <li>
+                <img src='./Assets/SVGs/facebook.svg' />
+              </li>
+              <li>
+                <img src='./Assets/SVGs/linkedin.svg' />
+              </li>
+              <li>
+                <img src='./Assets/SVGs/twitter.svg' />
+              </li>
+              <li>
+                <img src='./Assets/SVGs/youtube.svg' />
+              </li>
+              <li>
+                <img src='./Assets/SVGs/instagram.svg' />
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="col-lg-4">
           <ul class="personal-info">
             <li>
-              <img src='./Assets/SVGs/contact.svg' /> 530.820.2150</li>
+              <img src='./Assets/SVGs/contact.svg' class="phone"/> 530.820.2150</li>
             <li>
               <img src='./Assets/SVGs/website.svg' /> Visit my website</li>
             <li>
@@ -139,17 +141,19 @@
     </div>
   </div>
 
-  <div class="container-fullwidth">
-    <div class="container sans-font">
-      <ul class="list-inline row text-center">
-        <li class="active col-lg-3">About Me</li>
-        <li class="col-lg-3">My Listings</li>
-        <li class="col-lg-3">My Solds</li>
-        <li class="col-lg-3">Testimonials</li>
-      </ul>
+  <div class="container-fullwidth" id="about">
+    <div class="container">
+      <div class="list-container">
+        <ul class="list-inline row text-center">
+          <li class="active col-lg-3"><a href="#">About Me</a></li>
+          <li class="col-lg-3"><a href="#">My Listings</a></li>
+          <li class="col-lg-3"><a href="#">My Solds</a></li>
+          <li class="col-lg-3"><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
       <div class="row">
         <div class="col-lg-8">
-          <p class="">
+          <p class="lorem">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper nisl, gravida vestibulum arcu. Etiam turpis lorem,
             gravida eu enim ut, ornare sagittis felis. In fermentum eros ligula, non ornare tellus convallis ut. Donec fringilla
             nulla vitae dolor consequat molestie. Mauris in nulla metus. Quisque mauris lectus, semper a tempus quis, consectetur
@@ -164,26 +168,22 @@
           </p>
         </div>
         <div class="col-lg-3 col-lg-offset-1">
-          <p class="">Language</p>
-          <p class="sans-font">Dutch, Finish, Spanish
-            <p/>
-            <br>
-            <br>
-            <p class="">Designations</p>
-            <p class="sans-font">CRS, GRI, CNE
-              <p/>
+          <p class="accolades">language</p>
+          <p class="info">Dutch, Finish, Spanish<p/>
+          <p class="accolades">designations</p>
+          <p class="info">CRS, GRI, CNE<p/>
         </div>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    <div class="container-fullwidth">
+    <div class="container-fullwidth small">
       <div class="container">
         <div class="col-lg-4 ">
           <p>1-800-234-4567</p>
           <p>5678 Main Street, Denver, CO 80123</p>
-          <ul class="list-inline">
+          <ul class="list-inline social">
             <li>
               <img src='./Assets/SVGs/facebook.svg' />
             </li>
@@ -207,8 +207,8 @@
             <li>Terms of Use</li>
             <li>Privacy Policy</li>
           </ul>
-          <p class="">&copy;2016 Ten Realty. All Rights Reserved</p>
-          <ul class="list-inline">
+          <p class=""><small>&copy;2016 Ten Realty. All Rights Reserved</small></p>
+          <ul class="list-inline social">
             <li>
               <img src="./Assets/SVGs/realtor.svg" />
             </li>

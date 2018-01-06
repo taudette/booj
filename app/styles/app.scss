@@ -1,0 +1,194 @@
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.small-caps {
+  font-variant-caps: small-caps;
+  font-weight: bolder;
+}
+
+button {
+  background-color: $clr-darkblue;
+  color: white;
+  height: 35px;
+}
+
+//span div with list
+@mixin horizontal-list-span-width {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  text-align: justify;
+
+  &:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+  & > li {
+    display: inline-block;
+  }
+}
+
+.items {
+  @include horizontal-list-span-width;
+}
+
+
+#contact-button, #search-button, #address-input {
+  border-radius: 0;
+}
+
+//Containers
+#header {
+  padding-bottom: .5em;
+
+  ul {
+    margin-bottom: 0px;
+  }
+
+  li {
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 3em;
+  }
+
+  .contact {
+    font-size: 10px;
+    padding-right: 2em;
+  }
+
+  .services {
+    font-size: 16px;
+    font-variant-caps: small-caps;
+    font-weight: bold;
+  }
+
+  .contact-column {
+    padding-right: 4em;
+  }
+}
+
+#search {
+  background-color: lightgrey;
+  color: white;
+  height: 45px; 
+
+
+  input {
+    width: 219px;
+    height: 35px;
+    margin-right: 3em;
+  }
+
+  button {
+    width: 182px;
+  }
+
+  ul{
+    padding-left: 8em;
+  }
+
+  li {
+    font-size: 16px;
+    font-variant-caps: small-caps;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-right: 4em;
+  }
+}
+
+#realtor {
+  background-color: $clr-lightgrey;
+
+  button {
+     width: 264px;
+     margin-bottom: 1.5em;
+  }
+
+  .social-container {
+    width: 264px;
+  }
+
+  p {
+    font-size: 85%;
+    color: $clr-darkgrey;
+  }
+
+  .personal-info{
+    color: $clr-lightblue;
+    list-style: none;
+    li {
+      padding-bottom: 1.2em;
+    }
+  }
+
+  img {
+    padding-right: .6em;
+  }
+
+  .phone {
+    padding-right: 1.3em;
+  }
+}
+
+#about {
+  font-family: 'Open Sans', sans-serif;
+
+  ul {
+    margin-left: 0px;
+    margin-right: 0px;
+    .active {
+      color: $clr-darkblue !important;
+      border-bottom: 1px solid $clr-darkblue;
+    }
+  }
+
+  li {  
+    font-size: 16px;
+    border-bottom: 1px solid $clr-darkgrey;
+    padding-bottom: .4em;
+    color: $clr-darkgrey;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+
+  .accolades {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-variant-caps: small-caps;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+
+  .info {
+    font-size: 85%;
+    color: $clr-darkgrey;
+  }
+
+  .list-container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+.footer {
+  padding-top: 19px;
+  color:white;
+  background-color: $clr-lightblue;
+  
+  p, ul {
+    margin-bottom: 3px;
+  }
+  
+  .social {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+
