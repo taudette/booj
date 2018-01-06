@@ -30,45 +30,41 @@
     <![endif]-->
 
   <div class="container-fullwidth top">
-    <div class="header">
+    <div id="header">
       <div class="row vertical-align">
         <div class="col-lg-3 col-md-4">
           <img src="./Assets/SVGs/TEN-logo.svg" alt="triangle with equal sides" />
         </div>
-        <div class="col-lg-9 col-md-8">
-          <div class="row small">
-            <ul class="list-inline pull-right text-center">
+        <div class="col-lg-9 col-md-8 contact-column">
+          <div class="row ">
+            <ul class="list-inline pull-right text-center contact">
               <li>
                 <a href="#">
-                  <small>
-                    <img src="./Assets/SVGs/contact.svg" />
-                    <p>contact</p>
-                 </small>
+                  <img src="./Assets/SVGs/contact.svg" />
+                  <p>Contact</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <small>
-                    <img src="./Assets/SVGs/account.svg" />
-                    <p>Account</p>
-                  </small>
+                  <img src="./Assets/SVGs/account.svg" />
+                  <p>Account</p>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="row small">
-            <ul class="list-inline pull-right">
+          <div class="row">
+            <ul class="list-inline text-right services">
               <li>
-                <a href="#">Search</a>
+                <a href="#">search</a>
               </li>
-              <li class="small-caps">
-                <a href="#">Communities</a>
+              <li class="">
+                <a href="#">communities</a>
               </li>
-              <li class="small-caps">
-                <a href="#">Services</a>
+              <li class="">
+                <a href="#">services</a>
               </li>
-              <li class="small-caps">
-                <a href="#">About us</a>
+              <li class="">
+                <a href="#">about us</a>
               </li>
             </ul>
           </div>
@@ -77,29 +73,29 @@
     </div>
   </div>
 
-  <div class="container-fullwidth">
+  <div id="search" class="container-fullwidth vertical-align">
     <div class="container">
-      <div class="row">
+      <div class="row vertical-align">
         <div class="col-lg-5">
           <form class="form-inline">
             <div class="form-group sans-font">
-              <input type="text" class="form-control" id="address" placeholder="Adress, City, Zip, or MLS#">
+              <input type="text" class="form-control input-sm" id="address-input" placeholder="Adress, City, Zip, or MLS#">
             </div>
-            <button type="submit" class="btn btn-default">Search</button>
+            <button type="submit" id="search-button" class="">Search</button>
           </form>
         </div>
-        <div class="col-lg-7">
-          <ul class="list-inline pull-right small-caps sans-font">
-            <li>New Listing</li>
-            <li>Open Houses</li>
-            <li>Map Search</li>
+        <div class="col-lg-6 col-offset-1">
+          <ul class="list-inline">
+            <li>new listings</li>
+            <li>open houses</li>
+            <li>map search</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fullwidth">
+  <div class="container-fullwidth" id="realtor">
     <div class="container">
       <div class="row">
         <div class="col-lg-3">
@@ -107,8 +103,8 @@
         </div>
         <div class="col-lg-4 col-lg-offset-1 text-left">
           <h2 class="name">Jane Smith</h2>
-          <p class="small-caps sans-font">Realtor&reg;</p>
-          <button>Contact Me</button>
+          <p class=" sans-font">Realtor&reg;</p>
+          <button id="contact-button">Contact Me</button>
           <ul class="list-inline">
             <li>
               <img src='./Assets/SVGs/facebook.svg' />
@@ -153,7 +149,7 @@
       </ul>
       <div class="row">
         <div class="col-lg-8">
-          <p class="small">
+          <p class="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec semper nisl, gravida vestibulum arcu. Etiam turpis lorem,
             gravida eu enim ut, ornare sagittis felis. In fermentum eros ligula, non ornare tellus convallis ut. Donec fringilla
             nulla vitae dolor consequat molestie. Mauris in nulla metus. Quisque mauris lectus, semper a tempus quis, consectetur
@@ -168,12 +164,14 @@
           </p>
         </div>
         <div class="col-lg-3 col-lg-offset-1">
-          <p>LANGUAGE</p>
-          <small class="sans-font">Dutch, Finish, Spanish</small>
-          <br>
-          <br>
-          <p>Designations</p>
-          <small class="sans-font">CRS, GRI, CNE</small>
+          <p class="">Language</p>
+          <p class="sans-font">Dutch, Finish, Spanish
+            <p/>
+            <br>
+            <br>
+            <p class="">Designations</p>
+            <p class="sans-font">CRS, GRI, CNE
+              <p/>
         </div>
       </div>
     </div>
@@ -182,41 +180,45 @@
   <div class="footer">
     <div class="container-fullwidth">
       <div class="container">
-          <div class="col-lg-4 small">
-            <p>1-800-234-4567</p>
-            <p>5678 Main Street, Denver, CO 80123</p>
-            <ul class="list-inline">
-              <li>
-                <img src='./Assets/SVGs/facebook.svg' />
-              </li>
-              <li>
-                <img src='./Assets/SVGs/linkedin.svg' />
-              </li>
-              <li>
-                <img src='./Assets/SVGs/twitter.svg' />
-              </li>
-              <li>
-                <img src='./Assets/SVGs/youtube.svg' />
-              </li>
-              <li>
-                <img src='./Assets/SVGs/instagram.svg' />
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-lg-offset-4 text-right">
-            <ul class="list-inline">
-              <li>Site Map </li>
-              <li>Terms of Use</li>
-              <li>Privacy Policy</li>
-            </ul>
-            <p class="small">&copy;2016 Ten Realty. All Rights Reserved</p>
-            <ul class="list-inline">
-              <li><img src="./Assets/SVGs/realtor.svg" /></li>
-              <li><img src="./Assets/SVGs/equal-housing.svg" /></li>          
-            </ul>
-          </div>
+        <div class="col-lg-4 ">
+          <p>1-800-234-4567</p>
+          <p>5678 Main Street, Denver, CO 80123</p>
+          <ul class="list-inline">
+            <li>
+              <img src='./Assets/SVGs/facebook.svg' />
+            </li>
+            <li>
+              <img src='./Assets/SVGs/linkedin.svg' />
+            </li>
+            <li>
+              <img src='./Assets/SVGs/twitter.svg' />
+            </li>
+            <li>
+              <img src='./Assets/SVGs/youtube.svg' />
+            </li>
+            <li>
+              <img src='./Assets/SVGs/instagram.svg' />
+            </li>
+          </ul>
         </div>
-      </small>
+        <div class="col-lg-4 col-lg-offset-4 text-right">
+          <ul class="list-inline">
+            <li>Site Map </li>
+            <li>Terms of Use</li>
+            <li>Privacy Policy</li>
+          </ul>
+          <p class="">&copy;2016 Ten Realty. All Rights Reserved</p>
+          <ul class="list-inline">
+            <li>
+              <img src="./Assets/SVGs/realtor.svg" />
+            </li>
+            <li>
+              <img src="./Assets/SVGs/equal-housing.svg" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -224,8 +226,8 @@
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     (function (b, o, i, l, e, r) {
-    b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-      function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
       e = o.createElement(i); r = o.getElementsByTagName(i)[0];
       e.src = 'https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e, r)
