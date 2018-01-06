@@ -12,4 +12,3 @@ Use the PSD or JPG design file to create an HTML/CSS ready web page. Below is cr
 ## Javascript Test
 Complete the javascript test located in Javascript / js_test.html. You may use either traditional javascript or jQuery to complete complete this. 
 
-
