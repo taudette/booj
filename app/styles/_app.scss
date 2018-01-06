@@ -1,3 +1,4 @@
+@import './colors.scss';
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
@@ -129,7 +130,10 @@ button {
   }
 
   .phone {
-    padding-right: 1.3em;
+    color: black;
+    img {
+      padding-right: 1.3em;
+    }
   }
 }
 
@@ -184,7 +188,7 @@ button {
   p, ul {
     margin-bottom: 3px;
   }
-  
+
   .social {
     margin-top: 10px;
     margin-bottom: 20px;
