@@ -42,8 +42,11 @@ h2 {
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-  font-size: 85%;
+@media only screen and (max-width : 840px) {
+  font-size: 70%;
+  .container {
+    width: 100% !important;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
