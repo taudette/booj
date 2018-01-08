@@ -127,6 +127,13 @@ button {
       padding-right: 1em;
     }
   }
+
+  //extra small screen
+  @media (max-width: 767px) {
+    .form-col {
+      width: 100%
+    }
+  }
 }
 
 #realtor {
