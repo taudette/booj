@@ -86,7 +86,8 @@ button {
   height: 45px; 
 
   .form-group {
-    width: 21.5em;
+    width: 21.7em;
+    padding: 0;
     
     input {
       width: 100%;
@@ -131,8 +132,21 @@ button {
   //extra small screen
   @media (max-width: 767px) {
     .form-col {
-      width: 100%
+      width: 100%;
+
+      .form-group {
+        margin-bottom: 0;
+      }
+
+      .svg {
+        fill: white;
+      }
+
+      button {
+        width: 20%;
+      }
     }
+
   }
 }
 
