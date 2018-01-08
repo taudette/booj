@@ -4,8 +4,6 @@ git clone https://github.com/taudette/booj.git
 npm install
 gulp serve
 
-(or just load the html file in the app folder)
-
 # Frontend Code Test
 ## HTML/CSS Test
 Use the PSD or JPG design file to create an HTML/CSS ready web page. Below is criteria for this project:

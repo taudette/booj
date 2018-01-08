@@ -59,14 +59,14 @@ button {
     padding-right: 30em;
   }
 
-  li {
-    font-family: 'Open Sans', sans-serif;
-    padding-right: 3em;
-  }
 
   .contact {
     font-size: 10px;
     padding-right: 2em;
+
+    .svg {
+      fill: $clr-lightblue;
+    }
   }
 
   .services {
@@ -86,7 +86,7 @@ button {
   height: 45px; 
 
   .form-group {
-    width: 20em;
+    width: 21.5em;
     
     input {
       width: 100%;
@@ -131,8 +131,9 @@ button {
 
 #realtor {
   background-color: $clr-lightgrey;
+
   .realtor-img  {
-    width: 20.3em;
+    width: 21.5em;
   }
 
   button {
@@ -142,6 +143,10 @@ button {
 
   .social-container {
     width: 100%;
+    
+    .svg {
+      fill: $clr-blackgrey;
+    }
   }
 
   p {
@@ -152,21 +157,25 @@ button {
   .personal-info{
     color: $clr-lightblue;
     list-style: none;
+    font-size: 1.2em;
+
     li {
       padding-bottom: 1.2em;
+      display: flex;
+      align-items: center;
+    }
+
+    .svg {
+      margin-right: .6em;
+      fill: $clr-lightblue;
+    }
+
+    .phone {
+      color: $clr-blackgrey;
+      padding-left: 1em;
     }
   }
 
-  img {
-    padding-right: .6em;
-  }
-
-  .phone {
-    color: black;
-    img {
-      padding-right: 1.3em;
-    }
-  }
 }
 
 #about {
@@ -224,6 +233,10 @@ button {
   .social {
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+
+  .svg {
+    fill: white;
   }
 }
 
