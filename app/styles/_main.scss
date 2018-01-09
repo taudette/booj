@@ -2,7 +2,7 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 // endbower
-
+@import './colors.scss';
 // IMAGES
 // ---------------------------
 .top {
@@ -33,6 +33,27 @@ h2 {
   font-size: 3em;
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.small-caps {
+  font-variant-caps: small-caps;
+  font-weight: bolder;
+}
+
+button {
+  background-color: $clr-darkblue;
+  color: white;
+  height: 35px;
+  font-size: 1.4em;
+}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -43,7 +64,6 @@ h2 {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 840px) {
-  font-size: 70%;
   .container {
     width: 100% !important;
   }

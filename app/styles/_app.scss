@@ -1,27 +1,6 @@
 @import './colors.scss';
-a {
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
-}
 
-.vertical-align {
-  display: flex;
-  align-items: center;
-}
-
-.small-caps {
-  font-variant-caps: small-caps;
-  font-weight: bolder;
-}
-
-button {
-  background-color: $clr-darkblue;
-  color: white;
-  height: 35px;
-  font-size: 1.4em;
-}
-
-//span div with list
+//span entire div with list
 @mixin horizontal-list-span-width {
   margin: 0;
   padding: 0;
@@ -67,7 +46,6 @@ button {
   .logo {
     padding-right: 30em;
   }
-
 
   .contact {
     font-size: 10px;
@@ -356,7 +334,6 @@ button {
   
 
   @media (max-width: 767px) {
-    
     text-align: center;
     padding-top:2em;
     font-size: 200%;
