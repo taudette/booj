@@ -1,6 +1,7 @@
 
 ## TO RUN APP
 git clone https://github.com/taudette/booj.git
+cd booj
 npm install
 gulp serve
 
