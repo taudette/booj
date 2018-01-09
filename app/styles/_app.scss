@@ -51,7 +51,7 @@ button {
 #header {
   margin-left: 3em;
   margin-right: 3em;
-  
+
   .icon-bar {
     background-color: $clr-darkblue;
   }
@@ -86,6 +86,44 @@ button {
 
   .contact-column {
     padding-right: 4em;
+    display: grid;
+  }
+
+  //extra small screen
+  @media (max-width: 767px) {
+    .logo {
+      padding-right: 15em;
+     }
+
+    .contact{
+       padding-right: 0;
+     }
+
+    .contact-column {
+      display: inherit;
+      padding-left: 11em;
+      padding-right: 0;
+      height: 4em;
+    }
+
+    .navbar-toggle {
+      margin-bottom: 0;
+      margin-right: 0;
+      padding-bottom: 0;
+    }
+
+    .navbar-collapse {
+      position: fixed;
+      right: 1em;
+      background-color: white;
+      margin-top: 6em;
+    }
+
+    .menu {
+      font-size: 10px;
+      margin-left: .9em;
+      margin-bottom: 1.5em;
+    } 
   }
 }
 
@@ -258,6 +296,35 @@ button {
   .list-container {
     padding-top: 2em;
     padding-bottom: 2em;
+  }
+
+  .dropdown {
+    padding-top: 3em;
+    padding-bottom: 2em;
+    color: $clr-darkblue;
+
+    button {
+      width: 100%;
+      background-color: white;
+      color: $clr-darkblue;
+      border: 1px solid $clr-darkgrey;
+      text-align: left;
+      font-size: 1.7em;
+      font-weight: bold;
+
+      .title {
+        padding-right: 75%;
+      }
+    }
+
+    li {
+      font-size: 1em;
+      font-variant-caps: small-caps;
+      font-weight: bold;
+      text-decoration: none;
+      list-style: none;
+      padding-right: 2em;
+    }
   }
 }
 

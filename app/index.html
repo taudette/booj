@@ -21,6 +21,11 @@
 
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
   <!-- endbuild -->
 </head>
 
@@ -32,12 +37,12 @@
   <div class="container-fullwidth">
     <div id="header">
       <div class="row vertical-align">
-        <div class="col-lg-3 col-md-4 col-sm-3 col-3 logo">
+        <div class="col-lg-3 col-md-4 col-sm-3 col-3 logo col-xs-4">
           <img class="hidden-xs" src="./Assets/SVGs/TEN-logo.svg" alt="logo" />
           <img class="visible-xs" src="./Assets/SVGs/TEN-logo-mark.svg" alt="logo" />
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-9 col-xs-6 contact-column">
-          <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-9 col-xs-8 contact-column vertical-align">
+          <div>
             <ul class="list-inline pull-right text-center contact">
               <li>
                 <a href="#">
@@ -54,16 +59,17 @@
             </ul>
           </div>
 
-          <div class="row pull-right">
+          <div class="pull-right">
             <nav class="navbar">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
+                  <span class="icon-bar"></span>            
                 </button>
+                <p class="menu visible-xs">Menu</p>
               </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
+              <div class="collapse navbar-collapse pull-right" id="myNavbar">
                 <ul class="nav navbar-nav list-inline text-right services">
                     <li>
                         <a href="#">search</a>
@@ -159,13 +165,27 @@
 
   <div class="container-fullwidth" id="about">
     <div class="container">
-      <div class="list-container">
+      <div class="list-container hidden-xs">
         <ul class="list-inline row text-center">
           <li class="active col-lg-3 col-md-3 col-sm-3"><a href="#">About Me</a></li>
           <li class="col-lg-3 col-md-3 col-sm-3"><a href="#">My Listings</a></li>
           <li class="col-lg-3 col-md-3 col-sm-3"><a href="#">My Solds</a></li>
           <li class="col-lg-3 col-md-3 col-sm-3"><a href="#">Testimonials</a></li>
         </ul>
+      </div>
+      <div class="dropdown visible-xs">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="title">About Me</span><span>&or;</span>
+        </button>
+        
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <ul class="list">
+            <li><a class="dropdown-item" href="#">About Me</a></li>
+            <li><a class="dropdown-item" href="#">My Listings</a></li>
+            <li><a class="dropdown-item" href="#">My Solds</a></li>
+            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+          </ul>
+        </div>
       </div>
       <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-9">
@@ -250,12 +270,6 @@
     ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
   </script>
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
 
   <!-- build:js scripts/plugins.js -->
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
@@ -272,9 +286,6 @@
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
   <!-- endbuild -->
 
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
 </body>
 
 </html>
