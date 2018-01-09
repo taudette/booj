@@ -1,0 +1,78 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+// endbower
+@import './colors.scss';
+// IMAGES
+// ---------------------------
+.top {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 0 !important;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.small-caps {
+  font-variant-caps: small-caps;
+  font-weight: bolder;
+}
+
+button {
+  background-color: $clr-darkblue;
+  color: white;
+  height: 35px;
+  font-size: 1.4em;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  body {
+    font-size: 75%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 840px) {
+  .container {
+    width: 100% !important;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 767px) {
+  .container {
+    width: 100% !important;
+  }
+}
+
