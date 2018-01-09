@@ -49,6 +49,15 @@ button {
 
 //Containers
 #header {
+  margin-left: 3em;
+  margin-right: 3em;
+  
+  .icon-bar {
+    background-color: $clr-darkblue;
+  }
+  #myNavbar {
+    padding-right: 0;
+  }
   padding-bottom: .5em;
 
   ul {
@@ -146,7 +155,6 @@ button {
         width: 20%;
       }
     }
-
   }
 }
 
@@ -194,6 +202,17 @@ button {
     .phone {
       color: $clr-blackgrey;
       padding-left: 1em;
+    }
+  }
+  //extra small screen
+  @media (max-width: 767px) {
+    .vertical-align {
+      display: block;
+    }
+
+    .personal-info {
+      padding-top: 1em;
+      padding-left: 0;
     }
   }
 

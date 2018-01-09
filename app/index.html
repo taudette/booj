@@ -29,14 +29,15 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <div class="container-fullwidth top">
+  <div class="container-fullwidth">
     <div id="header">
       <div class="row vertical-align">
-        <div class="col-lg-3 col-md-4 col-sm-3 logo">
-          <img src="./Assets/SVGs/TEN-logo.svg" alt="triangle with equal sides" />
+        <div class="col-lg-3 col-md-4 col-sm-3 col-3 logo">
+          <img class="hidden-xs" src="./Assets/SVGs/TEN-logo.svg" alt="logo" />
+          <img class="visible-xs" src="./Assets/SVGs/TEN-logo-mark.svg" alt="logo" />
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-9 contact-column">
-          <div class="row ">
+        <div class="col-lg-9 col-md-8 col-sm-9 col-xs-6 contact-column">
+          <div class="row">
             <ul class="list-inline pull-right text-center contact">
               <li>
                 <a href="#">
@@ -52,23 +53,35 @@
               </li>
             </ul>
           </div>
-          <div class="row">
-            <ul class="list-inline text-right services">
-              <li>
-                <a href="#">search</a>
-              </li>
-              <li class="">
-                <a href="#">communities</a>
-              </li>
-              <li class="">
-                <a href="#">services</a>
-              </li>
-              <li class="">
-                <a href="#">about us</a>
-              </li>
-            </ul>
+
+          <div class="row pull-right">
+            <nav class="navbar">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav list-inline text-right services">
+                    <li>
+                        <a href="#">search</a>
+                      </li>
+                      <li class="">
+                        <a href="#">communities</a>
+                      </li>
+                      <li class="">
+                        <a href="#">services</a>
+                      </li>
+                      <li class="">
+                        <a href="#">about us</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
           </div>
-        </div>
+    
       </div>
     </div>
   </div>
@@ -101,10 +114,10 @@
   <div class="container-fullwidth" id="realtor">
     <div class="container">
       <div class="row vertical-align">
-        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
           <img src="./Assets/Realtor Image/saramortensun.jpg" class="realtor-img" alt="realtor" />
         </div>
-        <div class="col-lg-4 col-lg-offset-1 text-left col-md-4 col-md-offset-1 text-left col-sm-4">
+        <div class="col-lg-4 col-lg-offset-1 text-left col-md-4 col-md-offset-1 text-left col-sm-4 col-xs-12">
           <h2 class="name">Jane Smith</h2>
           <p>Realtor&reg;</p>
           <button id="contact-button">Contact Me</button>
@@ -128,7 +141,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <ul class="personal-info">
             <li>
               <img class="svg" src='./Assets/SVGs/contact.svg' alt="contact"/><span class="phone">530.820.2150</span></li>
@@ -183,7 +196,7 @@
   <div class="footer">
     <div class="container-fullwidth small row">
       <div class="container">
-        <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <p>1-800-234-4567</p>
           <p>5678 Main Street, Denver, CO 80123</p>
           <ul class="list-inline social">
@@ -204,7 +217,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-4 col-lg-offset-4 col-sm-4 col-sm-offset-4 text-right">
+        <div class="col-lg-4 col-lg-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 text-right">
           <ul class="list-inline">
             <li>Site Map </li>
             <li>Terms of Use</li>
