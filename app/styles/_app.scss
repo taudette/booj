@@ -342,8 +342,34 @@ button {
     margin-bottom: 20px;
   }
 
+  .conditions li {
+    text-decoration: underline;
+  }
+
   .svg {
     fill: white;
+  }
+  .phone {
+    height: 1em;
+  }
+
+  
+
+  @media (max-width: 767px) {
+    
+    text-align: center;
+    padding-top:2em;
+    font-size: 200%;
+
+    .social, .conditions {
+      @include horizontal-list-span-width;
+    }
+    .social {
+      margin-top: 1em;
+    }
+    p, .logos{
+      text-align: center;
+    }
   }
 }
 
